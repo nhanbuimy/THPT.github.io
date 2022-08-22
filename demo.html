@@ -67,7 +67,7 @@
                     <li><a href="#">Thời khóa biểu lớp</a></li>
                     <li><a href="#">Tài liệu học tập</a></li>
                     <li><a href="#">Câu chuyện học đường</a></li>
-                    <!--<li><a href="#khac">Khác</a></li>-->
+                    <li><a href="#">Khác</a></li>
                 </ul>
              </li>
 
@@ -77,10 +77,13 @@
                 </a>
              </li>
 
-             <li><a href="#">
-                <i class="fa fa-user-circle-o"></i>
-                <span>ĐĂNG NHẬP</span>
-                </a>
+             <li>
+                <div>
+                    <input type="text" placeholder="Search" id="keyword"/>
+                    <button>
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
              </li>
         </ul>
 </nav>
@@ -89,7 +92,17 @@
     <div class="act">
         <marquee direction="left"><h1>Chào mừng đến với trang thông tin điện tử trường THPT Dương Bạch Mai</h1></marquee>
     </div> 
-    <div id="time" class="Time"></div>
+    <div id="time" class="Time">
+        <script>
+            var today=new Date();
+            var d = today.getDay()
+            var h = today.getHours();//lấy dữ liệu ra
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            var date="Thứ "+(today.getDay()+1)+", "+today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear() +", " + h + ":" + m + ":" + s;
+            document.getElementById("time").innerHTML=date;
+        </script>
+    </div>
 </article>
 
 </body>

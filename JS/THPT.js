@@ -26,7 +26,42 @@ $(function(){
             $(".formright").hide(2000)
     });
 
+
+
+
+// TIME
+
+    setInterval(function() {
+        let clock = document.getElementById("time");
+        clock.innerHTML = showLock();
+    }, 1000);
+    
+    /*var today=new Date();
+    var d = today.getDay()
+    var h = today.getHours();//lấy dữ liệu ra
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    var date="Thứ "+(today.getDay()+1)+", "+today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear() +", " + h + ":" + m + ":" + s;
+    document.getElementById("time").innerHTML=date;*/
+
 })
+
+
+
+// TIME
+function showLock() {
+    let d = new Date();
+
+    return `Thứ ${d.getDay() + 1}, ${d.getDate()}/${d.getMonth() + 1}/${d.getFullYear()} , ${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`;
+}
+
+/*function init() {
+    setInterval(function() {
+        let clock = document.getElementById("time");
+        clock.innerHTML = showLock();
+    }, 1000);
+}*/
+
 
 
 // cố định menu
