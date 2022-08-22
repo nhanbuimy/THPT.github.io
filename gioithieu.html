@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liên hệ - Trường THPT Dương Bạch Mai</title>
-    <link rel="stylesheet" href="CSS/THPT_Lienhe.css"/>
+    <title>Giới thiệu - Trường THPT Dương Bạch Mai</title>
+    <link rel="stylesheet" href="CSS/THPT_Gioithieu.css"/>
     <link href="Pictures/logo.jpeg" rel="shortcut icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!--<script src="JS/jquery-3.6.0.min.js"></script>-->
     <script src="JS/THPT.js"></script>
 </head>
+
 <body>
         <div class="toTop">
             <div><i class="fa fa-arrow-circle-up"></i></div>
@@ -38,16 +39,16 @@
                     <span>GIỚI THIỆU</span>
                 </a>
                 <ul class="menu subcontent">
-                    <li><a href="#">Giới thiệu chung</a></li>
-                    <li><a href="#">Cơ sở vật chất</a></li>
-                    <li><a href="#">Đội ngũ giáo viên</a></li>
+                    <li><a href="#gioithieu">Giới thiệu chung</a></li>
+                    <li><a href="#lichsu">Lịch sử</a></li>
+                    <li><a href="#giaovien">Đội ngũ giáo viên</a></li>
                 </ul>
              </li>
 
              <li class="sub">
                 <a href="#">
                     <i class="fa fa-calendar"></i>
-                <span>TIN TỨC-SỰ KIỆN</span>
+                    <span>TIN TỨC-SỰ KIỆN</span>
                 </a>
                 <ul class="menu subcontent">
                     <li><a href="#">Điểm chuẩn đại học</a></li>
@@ -91,105 +92,63 @@
     <div id="time" class="Time"></div>
 </article>
 
-<div class="slideshow">
-    <img id="slide" onmouseover="ChuyenAnh()" src="Pictures/hinh.jpeg">
-</div>
+</body>
+    <div class="slideshow">
+        <img id="slide" onmouseover="ChuyenAnh()" src="Pictures/hinh.jpeg">
+    </div>
 
 <section>
-    <div class="form">
-        <div class="left">
-            <h1 class="contactleft">trường thpt dương bạch mai</h1>
-            <ul class="lienhe">
-                <li><b>Địa chỉ:</b> Xã Phước Hội, huyện Đất Đỏ, tỉnh Bà Rịa - Vũng Tàu</li>
-                <li><b>Điện thoại:</b>
-                    <ul class="lienhe con">
-                        <li><i>Phòng quản lý đào tạo: (024) 62973 000</i></li>
-                        <li><i>Phòng tuyển sinh: (024) 7300 6800</i></li>
-                    </ul>
-                </li>
-                <li><b>Email:</b>
-                    <a href="mailto:thptduongbachmai@gmail.com?subject=Phản hồi&body=Tuyệt vời">thptduongbachmai@gmail.com</a>
-                </li>
-            </ul>
-        
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5711.65708828847!2d107.28754832653073!3d10.439342622377257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317575883807013d%3A0x83afcd84977a1fa6!2zVHLGsOG7nW5nIFRIUFQgRMawxqFuZyBC4bqhY2ggTWFp!5e0!3m2!1svi!2s!4v1660144638760!5m2!1svi!2s" width="100%" height="250px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-           </div>
+    <section>
+        <div class="reviews">
+            <h1>Đặc điểm nổi bật</h1>
+            <div class="review">
+                <div>
+                    <div class="xephang">2</div> 
+                    <img src="Pictures/study.jpg" alt="dbm"/>
+                    <div class="items">Chất lượng dạy học tốt</div>
+                </div>
 
-           <div class="apps">
-                <div class="app">FACEBOOK / WEBSITE:
-                    <a href="https://vi-vn.facebook.com/duongbachmai064/"><i class="fa fa-facebook-official"></i></a>
-                    <a href="http://thpt-duongbachmai.bariavungtau.edu.vn/"><i class="fa fa-google"></i></a>
+                <div>
+                    <div class="xephang">1</div>
+                    <img src="Pictures/teacher.jpg" alt="dbm"/>
+                    <div class="items">Đội ngũ giáo viên đầy kinh nghiệm</div>
+                </div>
+               
+
+                <div>
+                    <div class="xephang">3</div>
+                    <img src="Pictures/computer.jpg" alt="dbm"/>
+                    <div class="items">Cơ sở vật chất đầy đủ, hiện đại</div>
                 </div>
             </div>
         </div>
-
-        <div class="right">
-            <h1 class="contactright"><i class="fa fa-hand-o-right"></i> C<i class="fa fa-globe"></i>NTACT US <i class="fa fa-hand-o-left"></i></h1>
-            <input type="button" id="showId" value="Hiện Form"/>
-            <input type="button" id="hideId" value="Ẩn Form"/>
-            <div class="formright">
-                <form id="myForm" onsubmit="return Submit()">
-                    <div class="row">
-                        <div class="col-30">
-                            <label for="user" id="name">Họ và tên</label>
-                        </div>
-
-                        <div class="col-70">
-                            <input class="textform" type="text" placeholder="Nhập tên của bạn..">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-30">
-                            <label for="user">Email</label>
-                        </div>
-
-                        <div class="col-70">
-                            <input class="textform" type="email" placeholder="Nhập Email của bạn..">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-30">
-                            <label for="user" id="phone">Số điện thoại</label>
-                        </div>
-
-                        <div class="col-70">
-                            <input class="textform" type="tel" placeholder="Nhập sdt của bạn..">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-30">
-                            <label for="gt">Giới tính</label>
-                        </div>
-
-                        <div class="col-70">
-                            <input type="radio" name="p" />Nam
-                            <input type="radio" name="p" />Nữ
-                            <input type="radio" name="p" />Khác
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-30">
-                            <label for="content">Nội dung liên hệ của bạn: </label>
-                        </div>
-
-                        <div class="col-70">
-                            <textarea id="content" placeholder="Viết nội dung của bạn.." ></textarea>
-                        </div>
-                    </div>
-
-                    <div class="row">   
-                        <div><input type="reset" id="delete" value="Xóa"/></div>
-                        <div><input type="submit" value="Gửi"/></div> 
-                    </div>
-                </form>
+    </section>
+    
+    <section class="gioithieuchung">
+        
+        <div class="gioithieu">
+            <h1 id="gioithieu">GIỚI THIỆU CHUNG</h1>
+            <div>Ngôi nhà chung Dương Bạch Mai luôn tự hào là nơi mỗi học sinh được học cách cho và nhận yêu thương, nơi mỗi học sinh luôn tự tin tỏa sáng, nơi là bệ phóng để mỗi học sinh xây dựng tương lai thành công. Với triết lý giáo dục hướng đến 5 giá trị cốt lõi: “Tôn trọng, Trách nhiệm, Yêu thương, Hợp tác, Sáng tạo”, nhà trường luôn hướng đến mục tiêu giáo dục: “Đào tạo những học sinh có phẩm chất, kiến thức, kĩ năng ngang tầm học sinh các nước tiên tiến trong khu vực, hòa nhập được với cộng đồng thế giới và trở thành công dân toàn cầu, có thể học tập và làm việc thành công ở Việt Nam cũng như ở các nước trên thế giới</div>
+            <div>
+                <img src="Pictures/hinh.jpeg"/>
+                <img src="Pictures/gioithieu1.jpg"/>
+                <img src="Pictures/school.jpg"/>
             </div>
         </div>
-    </div>
+        
+        <div class="lichsu">
+            <h1 id="lichsu">LỊCH SỬ</h1>
+            <div><img src="Pictures/truong.jpeg"/></div>
+            <div>Trường được tách từ trường THPT Võ Thị Sáu và được quyết định thành lập vào năm 2007 tại địa chỉ C7QQ+XMV, Tỉnh Lộ 44, Phước Hội, Đất Đỏ, Bà Rịa - Vũng Tàu. Trong gần 15 năm qua, trường THPT Dương Bạch Mai đang đi trên chặng đường đầu tiên tuy nhiều thử thách nhưng cũng đồng thời cũng nhận được nhiều sự hỗ trợ từ các cấp lãnh đạo Huyện, Tỉnh cũng như từ các bậc phụ huynh học sinh. Những thành tích mà nhà trường đã và đang đạt được chứng minh cho điều đó. </div>
+        </div>
+    
+        <div class="giaovien">
+            <h1 id="giaovien">GIÁO VIÊN</h1>
+            <div>100% giáo viên tốt nghiệp Đại học trong đó hơn 30% có trình độ Thạc sĩ, một nhà giáo ưu tú. Là những giáo viên giỏi, chiễn sĩ thi đua được tuyển chọn từ những trường THCS có uy tín, có năng lực chuyên môn vững vàng, có kinh nghiệm ôn thi học sinh giỏi, du học quốc tế; phẩm chất đạo đức tốt, tâm huyết với nghề, có phong cách ứng xử thân thiện với học sinh và phụ huynh học sinh. Ngoài ra, trường còn mời đội ngũ giáo viên người nước ngoài có kinh nghiệm giảng dạy, thân thiện với học sinh.</div>
+            <div><img src="Pictures/giaovien.jpg"/></div>
+        </div>
+    </section> 
+
 </section>
 
 <footer>
