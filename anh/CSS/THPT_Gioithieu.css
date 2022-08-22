@@ -1,0 +1,373 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color:peachpuff;
+    width:100%;
+}
+
+img{
+    max-width:400px;
+    max-height:200px
+}
+
+.logo{
+    width:20%;
+}
+.tieude{
+    width:50%;
+}
+.hinh{
+    width:30%;
+}
+
+div.container h1{
+    font-size:30px;
+    color:rgb(235, 27, 44);
+    text-shadow:1px 2px 4px black;
+    text-align: center;
+}
+
+div.container
+{
+    display: flex;
+    align-items: center;
+   
+}
+
+nav> ul.menu{
+    display:flex;
+}
+
+nav{
+  background-color:rgb(2, 139, 2);
+  margin-bottom:5px;
+}
+ul.menu{
+    list-style-type: none;
+    align-items: center;
+    margin:0;
+    padding:0;
+}
+
+nav>ul.menu >li{
+    text-align: center;
+    width:16.6%;
+    border-right: 1px solid white;
+    position: relative;
+}
+
+nav>ul.menu >li:last-child {
+  border: none;
+}
+
+ul.menu>li>a{
+    display:block;
+    text-decoration: none;
+    color:white;
+    padding:10px;  
+}
+
+ul.menu>li>a>img{
+    width:20px;
+}
+ul.menu>li>a>span{
+    display:block;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+nav>ul.menu>li>a:hover{
+    text-decoration: none;
+    background-color:rgb(235, 27, 44);
+    color:yellow;
+}
+
+input[type=text] {
+    background-color: white;
+    color: black;
+    outline:none;
+    box-sizing: border-box;
+  }
+
+  input[type=text]:focus {
+    width: 75%;
+  }
+
+/*div> button img{
+    width:10px;
+   }
+*/
+
+.subcontent{
+    display: none;
+    background-color:rgb(6, 153, 6);
+    width:70%;
+    z-index: 999;
+    font-size:10px ;
+    font-weight: bold;
+}
+
+.subcontent::after{
+     content:" ";
+     border-width: 10px;
+     border-style:solid;
+     border-color: transparent transparent rgb(6, 153, 6) transparent;
+     position:absolute;
+     bottom:100%;
+     left:30%;
+}
+
+.sub:hover .subcontent{
+    display: block;
+    position:absolute;
+} 
+
+ul.subcontent>li>a:hover{
+    background-color: yellow;
+    color:blue;
+}
+
+div.act h1{
+    font-size: 12px;
+}
+div.act{
+    color:crimson;
+    background-color: lightblue;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.slideshow {
+    width: 1000px;
+    margin:10px 400px 10px 400px;
+  }
+
+  div.slideshow>img{
+    width:1000px;
+  }
+
+  .Time{
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+    color:red;
+  }
+
+  .gioithieuchung{
+    display:flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    font-style: italic;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.gioithieuchung>div{
+    width:100%;
+    margin: 5px 0;
+}
+
+.gioithieu{
+    background-color:mistyrose;
+    padding:5px 10px;
+    border: 1px solid red;
+    color:red;
+}
+
+div.gioithieu>div:last-child{
+    width:100%;
+    display: flex;
+}
+
+div.gioithieu>div img{
+    width:100%;
+    margin:5px 5px;
+}
+
+
+.lichsu, .giaovien{
+    display: flex;
+    border-top-left-radius: 15%;
+    border-bottom-right-radius: 20%;
+}
+
+.lichsu>div img{
+    width:300px;
+    height:150px;
+    border-radius: 40%;
+}
+
+div.lichsu{
+    background-color: lightblue;
+    border: 1px solid darkblue;
+    color:darkblue;
+}
+
+div.lichsu>h1{
+    font-size: 20px;
+    padding:5px 10px;
+    text-align: center;
+    font-weight: bold;
+    border-right: 1px dashed darkblue;
+}
+
+div.lichsu>div{
+    padding:5px 10px;
+}
+
+.giaovien>div img{
+    width:300px;
+    height:150px;
+    border-radius: 40%;
+}
+
+div.giaovien{
+    background-color:palegoldenrod;
+    border: 1px solid brown;
+    color:brown;
+}
+
+div.giaovien>h1{
+    font-size: 20px;
+    padding:5px 10px;
+    text-align: center;
+    font-weight: bold;
+    border-right: 1px dashed brown;
+}
+
+div.giaovien>div{
+    padding:5px 10px;
+}
+
+div.reviews> h1{
+    color:darkgreen;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+div.reviews{
+    width:100%;
+    height:300px;
+    background-image: url(../Pictures/green.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding:10px;
+    margin-bottom: 10px;
+}
+
+div.review{
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+div.review>div>img{
+    width:150px;
+    border-radius: 50%;
+}
+
+div.items{
+    background-color: rgb(74, 154, 17);
+    width:80%;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+div.xephang{
+    width:50px;
+    text-align: center;
+    position: absolute;
+    color:white;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+    background-color:rgb(74, 154, 17);
+    border-radius: 50%;
+}
+
+.foot{
+    background-color:peachpuff;
+    display:flex;
+    justify-content:space-between;
+}
+
+div.foot h2{
+    color:red;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+div.caunoi{
+    background-image: url(../Pictures/totnghiep2.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin: 0;
+    padding:90px 40px;
+}
+
+div.p{
+    background-color: gainsboro;
+    opacity: 0.5;
+    width:100%;
+    font-size: 20px;
+    font-style:italic;
+    font-weight:bold;
+    text-align: center;
+    color:red;
+    border-radius: 10%;
+}
+
+ul.menu1{
+    list-style-type: none;
+    align-items: center; 
+    color: darkgreen;
+}
+
+ul.menu1>li>a{
+    text-decoration: none;
+    color:darkgreen;
+}
+
+ul.menu1>li>a:hover{
+    color:blue;
+}
+
+.foot4{
+    background-color:green;
+    color: white; 
+}
+
+ul.menu2{
+    list-style-type: none;
+    display:flex;
+    justify-content:space-around;
+    padding:0;
+    margin:0;
+}
+
+ul.menu2>li:first-child{
+    font-weight: bold;
+}
+
+/* Định dạng nút mũi tên */
+.toTop {
+    display:none; 
+    bottom: 100px; 
+    right: 10px; 
+    cursor: pointer;  
+    position: fixed; 
+    z-index: 1000;
+    font-size: 60px;
+    color:rgb(2, 139, 2);
+}

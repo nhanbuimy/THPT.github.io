@@ -1,0 +1,411 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color:peachpuff;
+    width:100%;
+}
+
+img{
+    max-width:400px;
+    max-height:200px
+}
+
+.logo{
+    width:20%;
+}
+.tieude{
+    width:50%;
+}
+.hinh{
+    width:30%;
+}
+
+div.container h1{
+    font-size:30px;
+    color:rgb(235, 27, 44);
+    text-shadow:1px 2px 4px black;
+    text-align: center;
+}
+
+div.container
+{
+    display: flex;
+    align-items: center;
+   
+}
+
+nav> ul.menu{
+    display:flex;
+}
+
+nav{
+  background-color:rgb(2, 139, 2);
+  margin-bottom:5px;
+}
+ul.menu{
+    list-style-type: none;
+    align-items: center;
+    margin:0;
+    padding:0;
+}
+
+nav>ul.menu >li{
+    text-align: center;
+    width:16.6%;
+    border-right: 1px solid white;
+    position: relative;
+}
+
+nav>ul.menu >li:last-child {
+  border: none;
+}
+
+ul.menu>li>a{
+    display:block;
+    text-decoration: none;
+    color:white;
+    padding:10px;  
+}
+
+ul.menu>li>a>img{
+    width:20px;
+}
+ul.menu>li>a>span{
+    display:block;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+nav>ul.menu>li>a:hover{
+    text-decoration: none;
+    background-color:rgb(235, 27, 44);
+    color:yellow;
+}
+
+input[type=text] {
+    background-color: white;
+    color: black;
+    outline:none;
+    box-sizing: border-box;
+  }
+
+  input[type=text]:focus {
+    width: 75%;
+  }
+
+/*div> button img{
+    width:10px;
+   }
+*/
+
+.subcontent{
+    display: none;
+    background-color:rgb(6, 153, 6);
+    width:70%;
+    z-index: 999;
+    font-size:10px ;
+    font-weight: bold;
+}
+
+.subcontent::after{
+     content:" ";
+     border-width: 10px;
+     border-style:solid;
+     border-color: transparent transparent rgb(6, 153, 6) transparent;
+     position:absolute;
+     bottom:100%;
+     left:30%;
+}
+
+.sub:hover .subcontent{
+    display: block;
+    position:absolute;
+} 
+
+ul.subcontent>li>a:hover{
+    background-color: yellow;
+    color:blue;
+}
+
+div.act h1{
+    font-size: 12px;
+}
+div.act{
+    color:crimson;
+    background-color: lightblue;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.slideshow {
+  width: 1000px;
+  margin:10px 400px 10px 400px;
+}
+
+div.slideshow>img{
+  width:1000px;
+}
+
+.Time{
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+    color:red;
+  }
+
+  .form{
+    background-image: url(../Pictures/hinh4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    margin-bottom: 10px;
+  }
+
+  div.formright{
+    background-color:mistyrose;
+    margin:30px 10px 10px 0;
+    opacity: 0.95;
+    border: 1px dashed red;
+  }
+  
+  .right{
+    width:60%;
+  }
+
+  h1.contactleft{
+    text-align: center;
+    color:red;
+    text-shadow: 1px 2px 3px dimgray;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+
+  h1.contactright{
+    color:red;
+    font-size: 40px;
+    text-shadow: 1px 2px 3px dimgray;
+    margin:20px;
+    text-align: center;
+    font-style: italic;
+  }
+
+  h1.contactright>i.fa-globe{
+    animation:fa-globe 5s infinite;
+  }
+
+  @keyframes fa-globe {
+    from {
+      -webkit-transform:rotate(0deg);
+      -moz-transform:rotate(0deg);
+      -o-transform:rotate(0deg);
+    }
+    to {
+      -webkit-transform:rotate(360deg);
+      -moz-transform:rotate(360deg);
+      -o-transform:rotate(360deg);
+    }
+}
+
+  div.row{
+    width:100%;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    color:red;
+  }
+
+  div.col-30{
+    width:30%;
+    padding-left:15px;
+  }
+
+  div.col-70{
+    width:70%;
+    padding-left:15px;
+  }
+
+  input.textform{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 4px;
+  }
+
+  div.col-70>textarea{
+    width:100%;
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 4px;
+  }
+
+  label {
+    padding: 15px 15px 10px 0;
+    display: inline-block;
+  }
+
+  input[type=radio]{
+    padding:0;
+    width:20%;
+  }
+
+  input[type=submit],[type=reset]
+  {
+    background-color: red;
+    color:white;
+    width:55px;
+    height:50px;
+    border:none;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  div.row:last-child{
+    background-color: gainsboro;
+    height:50px;
+    border-top: 2px solid grey;
+    display:flex;
+  }
+
+  div.row:last-child>div{
+    margin:0 200px;
+  }
+
+  .left{
+    width:40%;
+    background-color:white;
+    opacity: 0.7;
+    margin:30px 30px 30px 30px;
+  }
+
+  .lienhe {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.lienhe > li > b {
+    color: blue;
+} 
+
+ul.lienhe>li{
+  padding:10px;
+}
+
+.con.lienhe > li {
+    text-indent: 10px; /*thục lề thẻ li con*/
+}
+
+a {
+  text-decoration: none;
+  color: #1E90FF;
+}
+
+div.map{
+  padding:10px;
+}
+
+div.apps{
+  font-size: 15px;
+  width:100%;
+  background-color: #ccc;
+  height:50px;
+  border-top: 2px solid grey;
+  font-weight: bold;
+  color:blue;
+  text-align: center;
+}
+
+div.app>a>i{
+  font-size: 30px;
+  padding: 0 30px;
+}
+
+/* nút ẩn hiên form*/
+#showId, #hideId {
+  width: 100px;
+  text-align: center;
+  background-color: lightgrey;
+  padding: 10px;
+}
+
+.foot{
+  background-color:peachpuff;
+  display:flex;
+  justify-content:space-between;
+}
+
+div.foot h2{
+  color:red;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+div.caunoi{
+  background-image: url(../Pictures/totnghiep2.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  margin: 0;
+  padding:90px 40px;
+}
+
+div.p{
+  background-color: gainsboro;
+  opacity: 0.5;
+  width:100%;
+  font-size: 20px;
+  font-style:italic;
+  font-weight:bold;
+  text-align: center;
+  color:red;
+  border-radius: 10%;
+}
+
+ul.menu1{
+  list-style-type: none;
+  align-items: center;
+  color: darkgreen;
+}
+
+ul.menu1>li a{
+  text-decoration: none;
+  color: darkgreen;
+}
+
+ul.menu1>li>a:hover{
+  color:blue;
+}
+
+.foot4{
+  background-color:green;
+  color: white; 
+}
+
+ul.menu2{
+  list-style-type: none;
+  display:flex;
+  justify-content:space-around;
+  padding:0;
+  margin:0;
+}
+
+ul.menu2>li:first-child{
+    font-weight: bold;
+}
+
+/* Định dạng nút mũi tên */
+.toTop {
+  display:none; 
+  bottom: 100px; 
+  right: 10px; 
+  cursor: pointer;  
+  position: fixed; 
+  z-index: 1000;
+  font-size: 60px;
+  color:rgb(2, 139, 2);
+}
+

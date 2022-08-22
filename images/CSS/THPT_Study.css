@@ -1,0 +1,448 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color:peachpuff;
+    width:100%;
+}
+
+img{
+    max-width:400px;
+    max-height:200px
+}
+
+.logo{
+    width:20%;
+}
+.tieude{
+    width:50%;
+}
+.hinh{
+    width:30%;
+}
+
+div.container h1{
+    font-size:30px;
+    color:rgb(235, 27, 44);
+    text-shadow:1px 2px 4px black;
+    text-align: center;
+}
+
+div.container
+{
+    display: flex;
+    align-items: center;
+   
+}
+
+nav> ul.menu{
+    display:flex;
+}
+
+nav{
+  background-color:rgb(2, 139, 2);
+  margin-bottom:5px;
+}
+ul.menu{
+    list-style-type: none;
+    align-items: center;
+    margin:0;
+    padding:0;
+}
+
+nav>ul.menu >li{
+    text-align: center;
+    width:16.6%;
+    border-right: 1px solid white;
+    position: relative;
+}
+
+nav>ul.menu >li:last-child {
+  border: none;
+}
+
+ul.menu>li>a{
+    display:block;
+    text-decoration: none;
+    color:white;
+    padding:10px;  
+}
+
+ul.menu>li>a>img{
+    width:20px;
+}
+ul.menu>li>a>span{
+    display:block;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+nav>ul.menu>li>a:hover{
+    text-decoration: none;
+    background-color:rgb(235, 27, 44);
+    color:yellow;
+}
+
+input[type=text] {
+    background-color: white;
+    color: black;
+    outline:none;
+    box-sizing: border-box;
+  }
+
+  input[type=text]:focus {
+    width: 75%;
+  }
+
+/*div> button img{
+    width:10px;
+   }
+*/
+
+
+.subcontent{
+    display: none;
+    background-color:rgb(6, 153, 6);
+    width:70%;
+    z-index: 999;
+    font-size:10px ;
+    font-weight: bold;
+}
+
+.subcontent::after{
+     content:" ";
+     border-width: 10px;
+     border-style:solid;
+     border-color: transparent transparent rgb(6, 153, 6) transparent;
+     position:absolute;
+     bottom:100%;
+     left:30%;
+}
+
+.sub:hover .subcontent{
+    display: block;
+    position:absolute;
+} 
+
+ul.subcontent>li>a:hover{
+    background-color: yellow;
+    color:blue;
+}
+
+nav{
+    margin-bottom:5px;
+}
+
+div.act h1{
+    font-size: 12px;
+}
+div.act{
+    color:crimson;
+    background-color: lightblue;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.slideshow {
+    width: 1000px;
+    margin:10px 400px 10px 400px;
+  }
+
+  div.slideshow>img{
+    width:1000px;
+  }
+
+.Time{
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+    color:red;
+  }
+
+  section.HocTap{
+    background-color: peachpuff;
+  }
+
+  section.HocTap>section.main{
+    margin:10px 20px 10px 20px;
+  }
+
+div.tieude1 h1{
+    text-transform: uppercase;
+    text-align: center;
+    color:red;
+    text-shadow: 1px 0 5px dimgrey;
+    font-size: 20px;
+    padding:5px 0;
+    border-bottom: 1px dashed red;
+    width:45%;
+    margin: 0 auto;
+}
+
+section > div {
+    font-style: italic;
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tkb {
+    padding: 10px;
+    font-size: 20px;
+    width: 30%;
+    position: relative;
+    padding:0;
+    margin: 10px 15px 10px 15px;
+    box-shadow:1px 0 5px black;
+}
+
+section.main>div.tkb:first-child{
+    background-color:gold;
+}
+
+section.main>div.tkb:nth-child(2){
+    background-color:hotpink;
+}
+
+section.main>div.tkb:last-child{
+    background-color:darkcyan;
+}
+
+div.tkb img {
+    width: 100%;
+}
+
+div.tkb > div > a {
+    color: red;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+}
+div.pnew {
+    padding: 10px;
+    position: absolute;
+    color: white;
+    background-color: cadetblue;
+    right: 0;
+    top: 0;
+    border-radius: 0 1rem 0 5rem;
+    animation: thaydoimau 3s ease infinite;
+}
+@keyframes thaydoimau {
+    0% { background-color: red;}
+    25% { background-color: orange;}
+    50% { background-color: blue;}
+    100% { background-color: green;}
+}
+
+section.main:last-child{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+div.course{
+    width:30%;
+    margin:10px 10px 10px 25px;
+    font-size: 20px;
+    border:1px solid lightgray;
+    font-weight: bold;
+    box-shadow: 1px 0 7px dimgray;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+div.course>div img{
+    width:100%;
+    height:200px;
+    transition-duration: 0.5s;
+}
+
+div.course>div img:hover {
+    transform: scale(1.1);
+}
+
+div.course>div:first-child{
+    padding:0;
+}
+
+div.course>div>a{
+    text-decoration: none;
+    color:white;
+}
+
+div.course>div>a:hover{
+    color:red;
+}
+
+div.bannerngang{
+    margin:20px 2.5px 20px 2.5px;
+}
+
+div.bannerngang>div{
+    background-image: url(../Pictures/banner..jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:1200px;
+    height:700px;
+}
+
+div.hocsinh{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.hocsinh>div:first-child{
+   width:50%;
+   background-image: url(../Pictures/vanghe.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+div.hocsinh>div:nth-child(2){
+    display: flex;
+    flex-wrap: wrap;
+    margin:0 ;
+    width:50%;
+}
+
+div.hocsinh>div:nth-child(2)>div{
+    width:50%;
+}
+
+div.hocsinh>div:nth-child(2)>div img{
+    display: block;
+    width:100%;
+}
+
+.noidung_an{
+    position: relative;
+    width: 50%;
+}
+
+.an{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: black;
+  }
+  
+  .noidung_an:hover .an{
+    opacity: 0.5;
+  }
+
+  .text {
+    font-style: italic;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border:2px solid white;
+    padding:10px 10px;
+  }
+
+  div.videos{
+    display: flex;
+  }
+
+  .foot{
+    background-color:peachpuff;
+    display:flex;
+    justify-content:space-between;
+}
+
+div.foot h2{
+    color:red;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+div.caunoi{
+    background-image: url(../Pictures/totnghiep2.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin: 0;
+    padding:90px 40px;
+}
+
+div.p{
+    background-color: gainsboro;
+    opacity: 0.5;
+    width:100%;
+    font-size: 20px;
+    font-style:italic;
+    font-weight:bold;
+    text-align: center;
+    color:red;
+    border-radius: 10%;
+}
+
+ul.menu1{
+    list-style-type: none;
+    align-items: center; 
+    color: darkgreen;
+}
+
+ul.menu1>li>a{
+    text-decoration: none;
+    color:darkgreen;
+}
+
+ul.menu1>li>a:hover{
+    color:blue;
+}
+
+.foot4{
+    background-color:green;
+    color: white; 
+}
+
+ul.menu2{
+    list-style-type: none;
+    display:flex;
+    justify-content:space-around;
+    padding:0;
+    margin:0;
+}
+
+ul.menu2>li:first-child{
+    font-weight: bold;
+}
+
+/* Định dạng nút mũi tên */
+.toTop {
+    display:none; 
+    bottom: 100px; 
+    right: 10px; 
+    cursor: pointer;  
+    position: fixed; 
+    z-index: 1000;
+    font-size: 60px;
+    color:rgb(2, 139, 2);
+}
+
+
+
+
+

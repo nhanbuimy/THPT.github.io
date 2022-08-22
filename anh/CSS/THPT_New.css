@@ -1,0 +1,471 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color:peachpuff;
+    width:100%;
+}
+
+img{
+    max-width:400px;
+    max-height:200px
+}
+
+.logo{
+    width:20%;
+}
+.tieude{
+    width:50%;
+}
+.hinh{
+    width:30%;
+}
+
+div.container h1{
+    font-size:30px;
+    color:rgb(235, 27, 44);
+    text-shadow:1px 2px 4px black;
+    text-align: center;
+}
+
+div.container
+{
+    display: flex;
+    align-items: center;
+   
+}
+
+nav> ul.menu{
+    display:flex;
+}
+
+nav{
+  background-color:rgb(2, 139, 2);
+  margin-bottom:5px;
+}
+ul.menu{
+    list-style-type: none;
+    align-items: center;
+    margin:0;
+    padding:0;
+}
+
+nav>ul.menu >li{
+    text-align: center;
+    width:16.6%;
+    border-right: 1px solid white;
+    position: relative;
+}
+
+nav>ul.menu >li:last-child {
+  border: none;
+}
+
+ul.menu>li>a{
+    display:block;
+    text-decoration: none;
+    color:white;
+    padding:10px;  
+}
+
+ul.menu>li>a>img{
+    width:20px;
+}
+ul.menu>li>a>span{
+    display:block;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+nav>ul.menu>li>a:hover{
+    text-decoration: none;
+    background-color:rgb(235, 27, 44);
+    color:yellow;
+}
+
+input[type=text] {
+    background-color: white;
+    color: black;
+    outline:none;
+    box-sizing: border-box;
+  }
+
+  input[type=text]:focus {
+    width: 75%;
+  }
+.subcontent{
+    display: none;
+    background-color:rgb(6, 153, 6);
+    width:70%;
+    z-index: 999;
+    font-size:10px ;
+    font-weight: bold;
+}
+
+.subcontent::after{
+     content:" ";
+     border-width: 10px;
+     border-style:solid;
+     border-color: transparent transparent rgb(6, 153, 6) transparent;
+     position:absolute;
+     bottom:100%;
+     left:30%;
+}
+
+.sub:hover .subcontent{
+    display: block;
+    position:absolute;
+} 
+
+ul.subcontent>li>a:hover{
+    background-color: yellow;
+    color:blue;
+}
+
+nav{
+    margin-bottom:5px;
+}
+
+div.act h1{
+    font-size: 12px;
+}
+div.act{
+    color:crimson;
+    background-color: lightblue;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.slideshow {
+    width: 1000px;
+    margin:10px 400px 10px 400px;
+  }
+
+  div.slideshow>img{
+    width:1000px;
+  }
+
+ @keyframes slide {
+    20% {margin-left: 0px;}
+    30% {margin-left: -700px;}
+    50% {margin-left: -700px;}
+    60% {margin-left: -1400px;}
+    80% {margin-left: -1400px;}
+  }
+
+  .Time{
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+    color:red;
+  }
+
+  .NEW{
+    background-color:peachpuff;
+    border-top:2px dashed red;
+    border-bottom: 2px dashed red;
+    margin-bottom: 20px;
+}
+
+  div.tintuc h1{
+    font-size: 40px;
+    text-shadow: 1px 2px 4px black;
+    color:red;
+    font-weight: bold;
+    text-align: center;
+  }
+
+.News-Events{
+    background:linear-gradient(white,rgb(236, 233, 233));
+    display:flex;
+    margin: 0 30px;
+    border-radius: 10px;
+    width:95%;
+    height:300px;
+}
+.News{
+    width:60%;
+    position:relative;
+}
+
+div.News img{
+    width:100%;
+    float:left;
+}
+
+div.News>a>p{
+   width:50%;
+   top:150px;
+   left:25px;
+   right:25px;
+   position:absolute;
+   background-color:yellow;
+}
+
+.an{
+    display: block;
+  	display: -webkit-box;
+  	padding:10px;
+  	font-size: 16px;
+    font-style: italic;
+  	line-height: 2;
+  	-webkit-line-clamp: 7;  
+  	-webkit-box-orient: vertical;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+  	margin-top:15px;
+}
+
+div.xem{
+    text-decoration: none;
+    color:darkblue;
+    font-size: 15px; 
+    font-style: italic;
+    font-weight: bold;
+    background-color: yellow;
+    width:70%;
+}
+
+div.xem>a{
+    color:red;
+    font-style: italic;
+    font-weight: bold;
+}
+
+div.xem>a:hover{
+    color:red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+div.News>a{
+    color:darkblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+div.News>a:hover{
+    color:red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+div.new{
+    width:70px;
+    height:40px;
+    position: absolute;
+    color:red;
+    font-style: italic;
+    font-weight: bold;
+    background-color: yellow;
+    animation: new 2s infinite;
+    top:0;
+    right:300px;
+    padding:5px;
+    border-radius: 50%;
+}
+
+@keyframes new{
+    0% {background-color:yellow; color:red;}
+    100% {background-color:darkblue; color:orange}
+}
+
+h1.lastest_h1{
+    font-size:30px;
+    font-weight: bold;
+    color:red;
+    text-align:center;
+    text-shadow: 1px 2px 5px black;
+    width:100%;
+}
+
+sup.news{
+    animation: news 3s infinite;
+    font-size: 15px;
+}
+
+@keyframes news{
+    0% { color: red; }
+    25% { color: yellow; }
+    50% {color: green;}
+    75% {color:blue;}
+    100% { color: red; }
+}
+
+.lastestnews{
+    width:40%;
+    border-left: 2px dashed red;
+}
+
+ul.lastest{
+    list-style-type: none;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+ul.lastest>li{ 
+    margin-bottom: 3px;
+}
+
+ul.lastest>li>a{
+    text-decoration: none;
+    color:darkblue;
+}
+
+ul.lastest>li>a>img{
+    float:left;
+    width:25%;
+    padding: 10px;
+}
+
+ul.lastest>li>a:hover{
+    font-weight:bold;
+    color:red;
+}
+
+div.Thongtin{
+    display:flex;
+    justify-content: flex-start;
+    margin: 0 5px;
+    flex-wrap: wrap;
+    margin-bottom:10px;
+}
+
+div.thongtin{
+    text-align:center;
+    width:31%;
+    padding:0;
+    margin:7px 13px;
+    background-color: white;
+    box-shadow: 0 0 7px black;
+    overflow: hidden;
+}
+
+div.thongtin>img{
+    width:100%;
+    height:100%;
+    transition-duration: 0.5s;
+}
+
+.thongtin img:hover {
+    transform: scale(1.1);
+}
+
+div.thongtin>div a{
+    text-decoration: none;
+    font-weight: bold;
+    color:red;
+}
+
+div.thongtin> div>a:hover{
+    font-weight: bold;
+    color:darkblue;
+    font-style: italic;
+}
+
+div.tieude1{
+    width:60%;
+    background-color: yellow;
+    display:block;
+    position: relative;
+}
+
+div.tieude1::after{
+    content: " ";
+    border-width: 14px;
+    border-style: solid;
+    border-color: transparent transparent transparent yellow;
+    position: absolute;
+    bottom: 0;
+    left:100%;
+}
+
+div.tieude1 h2{
+    color:red;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 2px 3.5px black;
+    text-transform: uppercase;
+}
+
+.foot{
+    background-color:peachpuff;
+    display:flex;
+    justify-content:space-between;
+}
+
+div.foot h2{
+    color:red;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+div.caunoi{
+    background-image: url(../Pictures/totnghiep2.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin: 0;
+    padding:90px 40px;
+}
+
+div.p{
+    background-color: gainsboro;
+    opacity: 0.5;
+    width:100%;
+    font-size: 20px;
+    font-style:italic;
+    font-weight:bold;
+    text-align: center;
+    color:red;
+    border-radius: 10%;
+}
+
+ul.menu1{
+    list-style-type: none;
+    align-items: center; 
+    color: darkgreen;
+}
+
+ul.menu1>li>a{
+    text-decoration: none;
+    color:darkgreen;
+}
+
+ul.menu1>li>a:hover{
+    color:blue;
+}
+
+.foot4{
+    background-color:green;
+    color: white; 
+}
+
+ul.menu2{
+    list-style-type: none;
+    display:flex;
+    justify-content:space-around;
+    padding:0;
+    margin:0;
+}
+
+ul.menu2>li:first-child{
+    font-weight: bold;
+}
+
+/* Định dạng nút mũi tên */
+.toTop {
+    display:none; 
+    bottom: 100px; 
+    right: 10px; 
+    cursor: pointer;  
+    position: fixed; 
+    z-index: 1000;
+    font-size: 60px;
+    color:rgb(2, 139, 2);
+}
+
+
