@@ -1,6 +1,5 @@
 *{
     font-family:Arial, Helvetica, sans-serif;
-    box-sizing: border-box
 }
 
 header{
@@ -42,8 +41,8 @@ nav> ul.menu{
 }
 
 nav{
-    background-color:rgb(2, 139, 2);
-    margin-bottom:5px;
+  background-color:rgb(2, 139, 2);
+  margin-bottom:5px;
 }
 ul.menu{
     list-style-type: none;
@@ -60,7 +59,7 @@ nav>ul.menu >li{
 }
 
 nav>ul.menu >li:last-child {
-    border: none;
+  border: none;
 }
 
 ul.menu>li>a{
@@ -79,19 +78,10 @@ ul.menu>li>a>span{
     font-size: 10px;
 }
 
-ul.menu>li>a{
-    display: block;
-}
-
 nav>ul.menu>li>a:hover{
     text-decoration: none;
     background-color:rgb(235, 27, 44);
     color:yellow;
-}
-
-input{
-    text-align:left;
-    width:40%;
 }
 
 input[type=text] {
@@ -105,9 +95,10 @@ input[type=text] {
     width: 75%;
   }
 
-  div> button img{
-   width:10px;
-  }
+/*div> button img{
+    width:10px;
+   }
+*/
 
 .subcontent{
     display: none;

@@ -4,21 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Học tập - Trường THPT Dương Bạch Mai</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="CSS/THPT_Study.css"/>
+    <title>Giới thiệu - Trường THPT Dương Bạch Mai</title>
+    <link rel="stylesheet" href="CSS/THPT_Gioithieu.css"/>
     <link href="Pictures/logo.jpeg" rel="shortcut icon" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!--<script src="JS/jquery-3.6.0.min.js"></script>-->
     <script src="JS/THPT.js"></script>
 </head>
 
 <body>
-    <div class="toTop">
-        <div><i class="fa fa-arrow-circle-up"></i></div>
-    </div>
-
+        <div class="toTop">
+            <div><i class="fa fa-arrow-circle-up"></i></div>
+        </div>
     <header>
         <div class="container">
             <div class="logo"><img src="Pictures/logo.jpeg"/></div>
@@ -41,16 +39,16 @@
                     <span>GIỚI THIỆU</span>
                 </a>
                 <ul class="menu subcontent">
-                    <li><a href="#">Giới thiệu chung</a></li>
-                    <li><a href="#">Lịch sử</a></li>
-                    <li><a href="#">Đội ngũ giáo viên</a></li>
+                    <li><a href="#gioithieu">Giới thiệu chung</a></li>
+                    <li><a href="#lichsu">Lịch sử</a></li>
+                    <li><a href="#giaovien">Đội ngũ giáo viên</a></li>
                 </ul>
              </li>
 
              <li class="sub">
                 <a href="#">
                     <i class="fa fa-calendar"></i>
-                <span>TIN TỨC-SỰ KIỆN</span>
+                    <span>TIN TỨC-SỰ KIỆN</span>
                 </a>
                 <ul class="menu subcontent">
                     <li><a href="#">Điểm chuẩn đại học</a></li>
@@ -66,9 +64,9 @@
                 <span>HỌC TẬP</span>
                 </a>
                 <ul class="menu subcontent">
-                    <li><a href="#thoikhoabieu">Thời khóa biểu lớp</a></li>
-                    <li><a href="#tailieu">Tài liệu học tập</a></li>
-                    <li><a href="#hocduong">Câu chuyện học đường</a></li>
+                    <li><a href="#">Thời khóa biểu lớp</a></li>
+                    <li><a href="#">Tài liệu học tập</a></li>
+                    <li><a href="#">Câu chuyện học đường</a></li>
                     <!--<li><a href="#khac">Khác</a></li>-->
                 </ul>
              </li>
@@ -94,166 +92,62 @@
     <div id="time" class="Time"></div>
 </article>
 
-<div class="slideshow">
-    <img id="slide" onmouseover="ChuyenAnh()" src="Pictures/hinh.jpeg">
-</div>
+</body>
+    <div class="slideshow">
+        <img id="slide" onmouseover="ChuyenAnh()" src="Pictures/hinh.jpeg">
+    </div>
 
-<section class="HocTap">
-
+<section>
     <section>
-        <div class="tieude1" id="thoikhoabieu"><h1><i class="fa fa-calendar"></i> thời khóa biểu học kì ii năm học 2021 - 2022 </h1></div>
-        <div>(Áp dụng từ ngày 17 tháng 1 năm 2022)</div>   
-    </section>
+        <div class="reviews">
+            <h1>Đặc điểm nổi bật</h1>
+            <div class="review">
+                <div>
+                    <div class="xephang">2</div> 
+                    <img src="Pictures/study.jpg" alt="dbm"/>
+                    <div class="items">Chất lượng dạy học tốt</div>
+                </div>
 
-    <section class="main">
-        <div class="tkb">
-            <a href="https://docs.google.com/spreadsheets/u/0/d/1xXgLalohx17w8bePIcz5lMM1H0ArCgjMd3ufgiTk9AI/pub?gid=0" target="_blank"><img src="Pictures/sach10.jpg" alt="THỜI KHÓA BIỂU"/></a>
-            <div>
-                <a href="https://docs.google.com/spreadsheets/u/0/d/1xXgLalohx17w8bePIcz5lMM1H0ArCgjMd3ufgiTk9AI/pub?gid=0" target="_blank">Khối 10</a>
+                <div>
+                    <div class="xephang">1</div>
+                    <img src="Pictures/teacher.jpg" alt="dbm"/>
+                    <div class="items">Đội ngũ giáo viên đầy kinh nghiệm</div>
+                </div>
+               
+
+                <div>
+                    <div class="xephang">3</div>
+                    <img src="Pictures/computer.jpg" alt="dbm"/>
+                    <div class="items">Cơ sở vật chất đầy đủ, hiện đại</div>
+                </div>
             </div>
-            <div class="pnew">NEW</div>
+        </div>
+    </section>
+    
+    <section class="gioithieuchung">
+        
+        <div class="gioithieu">
+            <h1 id="gioithieu">GIỚI THIỆU CHUNG</h1>
+            <div>Ngôi nhà chung Dương Bạch Mai luôn tự hào là nơi mỗi học sinh được học cách cho và nhận yêu thương, nơi mỗi học sinh luôn tự tin tỏa sáng, nơi là bệ phóng để mỗi học sinh xây dựng tương lai thành công. Với triết lý giáo dục hướng đến 5 giá trị cốt lõi: “Tôn trọng, Trách nhiệm, Yêu thương, Hợp tác, Sáng tạo”, nhà trường luôn hướng đến mục tiêu giáo dục: “Đào tạo những học sinh có phẩm chất, kiến thức, kĩ năng ngang tầm học sinh các nước tiên tiến trong khu vực, hòa nhập được với cộng đồng thế giới và trở thành công dân toàn cầu, có thể học tập và làm việc thành công ở Việt Nam cũng như ở các nước trên thế giới</div>
+            <div>
+                <img src="Pictures/hinh.jpeg"/>
+                <img src="Pictures/gioithieu1.jpg"/>
+                <img src="Pictures/school.jpg"/>
+            </div>
         </div>
         
-        <div class="tkb">
-            <a href="https://docs.google.com/spreadsheets/u/0/d/1xXgLalohx17w8bePIcz5lMM1H0ArCgjMd3ufgiTk9AI/pub?gid=4" target="_blank"><img src="Pictures/sach11.jpeg" alt="THỜI KHÓA BIỂU"/></a>
-                    
-            <div>
-                <a href="https://docs.google.com/spreadsheets/u/0/d/1xXgLalohx17w8bePIcz5lMM1H0ArCgjMd3ufgiTk9AI/pub?gid=4" target="_blank">Khối 11</a>
-            </div>
-            <div class="pnew">NEW</div>
+        <div class="lichsu">
+            <h1 id="lichsu">LỊCH SỬ</h1>
+            <div><img src="Pictures/truong.jpeg"/></div>
+            <div>Trường được tách từ trường THPT Võ Thị Sáu và được quyết định thành lập vào năm 2007 tại địa chỉ C7QQ+XMV, Tỉnh Lộ 44, Phước Hội, Đất Đỏ, Bà Rịa - Vũng Tàu. Trong gần 15 năm qua, trường THPT Dương Bạch Mai đang đi trên chặng đường đầu tiên tuy nhiều thử thách nhưng cũng đồng thời cũng nhận được nhiều sự hỗ trợ từ các cấp lãnh đạo Huyện, Tỉnh cũng như từ các bậc phụ huynh học sinh. Những thành tích mà nhà trường đã và đang đạt được chứng minh cho điều đó. </div>
         </div>
-
-        <div class="tkb">
-            <a href="https://docs.google.com/spreadsheets/u/0/d/1xXgLalohx17w8bePIcz5lMM1H0ArCgjMd3ufgiTk9AI/pub?gid=5" target="_blank"><img src="Pictures/sach12.jpg" alt="THỜI KHÓA BIỂU"/></a>
-            <div>
-                <a href="https://docs.google.com/spreadsheets/u/0/d/1xXgLalohx17w8bePIcz5lMM1H0ArCgjMd3ufgiTk9AI/pub?gid=5" target="_blank">Khối 12</a>
-            </div>
-            <div class="pnew">NEW</div>
+    
+        <div class="giaovien">
+            <h1 id="giaovien">GIÁO VIÊN</h1>
+            <div>100% giáo viên tốt nghiệp Đại học trong đó hơn 30% có trình độ Thạc sĩ, một nhà giáo ưu tú. Là những giáo viên giỏi, chiễn sĩ thi đua được tuyển chọn từ những trường THCS có uy tín, có năng lực chuyên môn vững vàng, có kinh nghiệm ôn thi học sinh giỏi, du học quốc tế; phẩm chất đạo đức tốt, tâm huyết với nghề, có phong cách ứng xử thân thiện với học sinh và phụ huynh học sinh. Ngoài ra, trường còn mời đội ngũ giáo viên người nước ngoài có kinh nghiệm giảng dạy, thân thiện với học sinh.</div>
+            <div><img src="Pictures/giaovien.jpg"/></div>
         </div>
-
-    </section>
-
-    <section>
-        <div class="tieude1"><h1><i class="fa fa-calendar"></i> thời khóa biểu học kì i năm học 2020 - 2021 </h1></div>
-        <div>(Áp dụng từ ngày 7 tháng 11 năm 2021)</div> 
-    </section>
-
-    <section class="main">
-        <div class="tkb">
-            <a href="https://docs.google.com/spreadsheets/u/0/d/1xXgLalohx17w8bePIcz5lMM1H0ArCgjMd3ufgiTk9AI/pub?gid=0" target="_blank"><img src="Pictures/sach10.jpg" alt="THỜI KHÓA BIỂU"/></a>
-            <div>
-                <a href="https://docs.google.com/spreadsheets/u/0/d/1xXgLalohx17w8bePIcz5lMM1H0ArCgjMd3ufgiTk9AI/pub?gid=0" target="_blank">Khối 10</a>
-            </div>
-            
-        </div>
-        
-        <div class="tkb">
-            <a href="https://docs.google.com/spreadsheets/u/0/d/1xXgLalohx17w8bePIcz5lMM1H0ArCgjMd3ufgiTk9AI/pub?gid=4" target="_blank"><img src="Pictures/sach11.jpeg" alt="THỜI KHÓA BIỂU"/></a>
-                    
-            <div>
-                <a href="https://docs.google.com/spreadsheets/u/0/d/1xXgLalohx17w8bePIcz5lMM1H0ArCgjMd3ufgiTk9AI/pub?gid=4" target="_blank">Khối 11</a>
-            </div>
-            
-        </div>
-        <div class="tkb">
-            <a href="https://docs.google.com/spreadsheets/u/0/d/1xXgLalohx17w8bePIcz5lMM1H0ArCgjMd3ufgiTk9AI/pub?gid=5" target="_blank"><img src="Pictures/sach12.jpg" alt="THỜI KHÓA BIỂU"/></a>
-            <div>
-                <a href="https://docs.google.com/spreadsheets/u/0/d/1xXgLalohx17w8bePIcz5lMM1H0ArCgjMd3ufgiTk9AI/pub?gid=5" target="_blank">Khối 12</a>
-            </div>   
-        </div>
-    </section>
-
-    <section>
-        <div class="slideshow bannerngang">
-            <div></div>
-
-        </div>
-        <div class="tieude1" id="tailieu"><h1><i class="fa fa-book"></i> Tài liệu học tập</h1></div>
-    </section>
-
-    <section class="main">
-        <div class="course">
-            <div><img src="Pictures/math.jpg" alt="dbm"></div>
-            <div style="background-color:darkseagreen;"><a href="https://tailieutuoi.com/chu-de/de-cuong-toan-lop-12">TOÁN</a></div>
-        </div>
-
-        <div class="course">
-            <div><img src="Pictures/van.jpg" alt="dbm"></div>
-            <div style="background-color:steelblue;"><a href="https://tuyensinhso.vn/ban-tin/de-cuong-on-tap-mon-ngu-van-cho-thi-sinh-thi-thpt-quoc-gia-2020-c49447.html">NGỮ VĂN</a></div>
-        </div>
-
-        <div class="course">
-            <div><img src="Pictures/anh.jpg" alt="dbm"></div>
-            <div style="background-color:peru;"><a href="https://vndoc.com/s/%C4%91%E1%BB%81+c%C6%B0%C6%A1ng+Ti%E1%BA%BFng+Anh+l%E1%BB%9Bp+12">TIẾNG ANH</a></div>
-        </div>
-
-        <div class="course">
-            <div><img src="Pictures/hoa.jpg" alt="dbm"></div>
-            <div style="background-color:tan;"><a href="https://thptlongtruong.hcm.edu.vn/to-hoa-hoc/hoa-hoc-12-de-cuong-on-tap-hoc-ki-1/ctmb/43182/447807">HÓA HỌC</a></div>
-        </div>
-
-        <div class="course">
-            <div><img src="Pictures/li.jpg" alt="dbm"></div>
-            <div style="background-color:darksalmon;"><a href="https://tuyensinhso.vn/ban-tin/de-cuong-vat-ly-lop-12-kem-bai-tap-van-dung-on-thi-thpt-quoc-gia-2020-c50387.html">VẬT LÍ</a></div>
-        </div>
-
-        <div class="course">
-            <div><img src="Pictures/sinh.jpg" alt="dbm"></div>
-            <div style="background-color:cornflowerblue;"><a href="https://loigiaihay.com/de-cuong-hoc-ki-1-mon-sinh-lop-12-phan-ly-thuyet-a84574.html">SINH HỌC</a></div>
-        </div>
-
-        <div class="course">
-            <div><img src="Pictures/su.jpg" alt="dbm"></div>
-            <div style="background-color:cadetblue;"><a href="https://tuyensinhso.vn/ban-tin-truoc-ky-thi/tron-bo-de-cuong-on-tap-lich-su-lop-12-cho-thi-sinh-thi-thpt-quoc-gia-c26227.html">LỊCH SỬ</a></div>
-        </div>
-
-        <div class="course">
-            <div><img src="Pictures/dia.png" alt="dbm"></div>
-            <div style="background-color:darkkhaki;"><a href="https://tuyensinhso.vn/ban-tin-truoc-ky-thi/he-thong-hoa-kien-thuc-mon-dia-ly-lop-12-giup-thi-sinh-de-hoc-c25253.html">ĐỊA LÍ</a></div>
-        </div>
-    </section>
-
-    <section>
-        <div class="tieude1" id="hocduong"><h1><i class="fa fa-image"></i> ALBUM / VIDEO HỌC ĐƯỜNG </h1></div>
-        <div class="hocsinh">
-            <div></div>
-
-            <div>
-                <div class="noidung_an">
-                    <img src="Pictures/vannghe.jpg"/>
-                    <div class="an">
-                        <div class="text">Văn nghệ chào mừng 20-11</div>
-                    </div>
-                </div>
-
-                <div class="noidung_an">
-                    <img src="Pictures/hocduong3.jpg"/>
-                    <div class="an">
-                        <div class="text">Lễ tổng kết năm học</div>
-                    </div>
-                </div>
-
-                <div class="noidung_an">
-                    <img src="Pictures/hocduong2.jpg"/>
-                    <div class="an">
-                        <div class="text">Hội thao</div>
-                    </div>
-                </div>
-
-                <div class="noidung_an">
-                    <img src="Pictures/kếtnapdv.jpg"/>
-                    <div class="an">
-                        <div class="text">Lễ kết nạp đoàn viên mới</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="videos">
-                <div><iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F100057230988468%2Fvideos%2F204074018093683%2F&show_text=false&width=560&t=0" width="600" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe></div>
-                <div><iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F100057230988468%2Fvideos%2F223314422770716%2F&show_text=false&width=560&t=0" width="600" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe></div>
-            </div>
-        </div>
-
+    </section> 
 
 </section>
 
