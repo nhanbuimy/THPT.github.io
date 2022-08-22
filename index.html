@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tin tức & Sự kiên - Trường THPT Dương Bạch Mai</title>
-    <link rel="stylesheet" href="CSS/THPT_New.css"/>
+    <title>Học tập - Trường THPT Dương Bạch Mai</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/THPT_Study.css"/>
     <link href="Pictures/logo.jpeg" rel="shortcut icon" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!--<script src="JS/jquery-3.6.0.min.js"></script>-->
     <script src="JS/THPT.js"></script>
@@ -17,6 +18,7 @@
     <div class="toTop">
         <div><i class="fa fa-arrow-circle-up"></i></div>
     </div>
+
     <header>
         <div class="container">
             <div class="logo"><img src="Pictures/logo.jpeg"/></div>
@@ -40,7 +42,7 @@
                 </a>
                 <ul class="menu subcontent">
                     <li><a href="#">Giới thiệu chung</a></li>
-                    <li><a href="#">Cơ sở vật chất</a></li>
+                    <li><a href="#">Lịch sử</a></li>
                     <li><a href="#">Đội ngũ giáo viên</a></li>
                 </ul>
              </li>
@@ -48,13 +50,13 @@
              <li class="sub">
                 <a href="#">
                     <i class="fa fa-calendar"></i>
-                    <span>TIN TỨC-SỰ KIỆN</span>
+                <span>TIN TỨC-SỰ KIỆN</span>
                 </a>
                 <ul class="menu subcontent">
-                    <li><a href="#diemchuandaihoc">Điểm chuẩn đại học</a></li>
-                    <li><a href="#tuyensinhlop10">Tuyển sinh lớp 10</a></li>
-                    <li><a href="#cuocthi-khac">Cuộc thi</a></li>
-                    <li><a href="#cuocthi-khac">Khác</a></li>
+                    <li><a href="#">Điểm chuẩn đại học</a></li>
+                    <li><a href="#">Tuyển sinh lớp 10</a></li>
+                    <li><a href="#">Cuộc thi</a></li>
+                    <li class="sub"><a href="#">Khác</a></li>
                 </ul>
              </li>
             
@@ -64,9 +66,9 @@
                 <span>HỌC TẬP</span>
                 </a>
                 <ul class="menu subcontent">
-                    <li><a href="#">Thời khóa biểu lớp</a></li>
-                    <li><a href="#">Tài liệu học tập</a></li>
-                    <li><a href="#">Câu chuyện học đường</a></li>
+                    <li><a href="#thoikhoabieu">Thời khóa biểu lớp</a></li>
+                    <li><a href="#tailieu">Tài liệu học tập</a></li>
+                    <li><a href="#hocduong">Câu chuyện học đường</a></li>
                     <!--<li><a href="#khac">Khác</a></li>-->
                 </ul>
              </li>
@@ -85,7 +87,6 @@
         </ul>
 </nav>
 
-
 <article>
     <div class="act">
         <marquee direction="left"><h1>Chào mừng đến với trang thông tin điện tử trường THPT Dương Bạch Mai</h1></marquee>
@@ -97,231 +98,163 @@
     <img id="slide" onmouseover="ChuyenAnh()" src="Pictures/hinh.jpeg">
 </div>
 
-<section class="NEW">
-    <div class="Tintuc-Sukien">
-        <div class="tintuc">
-            <h1>TIN TỨC - SỰ KIỆN</h1>
+<section class="HocTap">
+
+    <section>
+        <div class="tieude1" id="thoikhoabieu"><h1><i class="fa fa-calendar"></i> thời khóa biểu học kì ii năm học 2021 - 2022 </h1></div>
+        <div>(Áp dụng từ ngày 17 tháng 1 năm 2022)</div>   
+    </section>
+
+    <section class="main">
+        <div class="tkb">
+            <a href="https://docs.google.com/spreadsheets/u/0/d/1xXgLalohx17w8bePIcz5lMM1H0ArCgjMd3ufgiTk9AI/pub?gid=0" target="_blank"><img src="Pictures/sach10.jpg" alt="THỜI KHÓA BIỂU"/></a>
+            <div>
+                <a href="https://docs.google.com/spreadsheets/u/0/d/1xXgLalohx17w8bePIcz5lMM1H0ArCgjMd3ufgiTk9AI/pub?gid=0" target="_blank">Khối 10</a>
+            </div>
+            <div class="pnew">NEW</div>
+        </div>
+        
+        <div class="tkb">
+            <a href="https://docs.google.com/spreadsheets/u/0/d/1xXgLalohx17w8bePIcz5lMM1H0ArCgjMd3ufgiTk9AI/pub?gid=4" target="_blank"><img src="Pictures/sach11.jpeg" alt="THỜI KHÓA BIỂU"/></a>
+                    
+            <div>
+                <a href="https://docs.google.com/spreadsheets/u/0/d/1xXgLalohx17w8bePIcz5lMM1H0ArCgjMd3ufgiTk9AI/pub?gid=4" target="_blank">Khối 11</a>
+            </div>
+            <div class="pnew">NEW</div>
         </div>
 
-        <div class="News-Events">
-            <div class="News">
-                <a href="https://vietnamnet.vn/tra-cuu-diem-thi-tot-nghiep-thpt-2022-tren-vietnamnet-2042363.html">
-                    <img src="Pictures/thptqg.webp"/>
-                    <p>Công bố điểm thi THPT Quốc gia 2022</p>
+        <div class="tkb">
+            <a href="https://docs.google.com/spreadsheets/u/0/d/1xXgLalohx17w8bePIcz5lMM1H0ArCgjMd3ufgiTk9AI/pub?gid=5" target="_blank"><img src="Pictures/sach12.jpg" alt="THỜI KHÓA BIỂU"/></a>
+            <div>
+                <a href="https://docs.google.com/spreadsheets/u/0/d/1xXgLalohx17w8bePIcz5lMM1H0ArCgjMd3ufgiTk9AI/pub?gid=5" target="_blank">Khối 12</a>
+            </div>
+            <div class="pnew">NEW</div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="tieude1"><h1><i class="fa fa-calendar"></i> thời khóa biểu học kì i năm học 2020 - 2021 </h1></div>
+        <div>(Áp dụng từ ngày 7 tháng 11 năm 2021)</div> 
+    </section>
+
+    <section class="main">
+        <div class="tkb">
+            <a href="https://docs.google.com/spreadsheets/u/0/d/1xXgLalohx17w8bePIcz5lMM1H0ArCgjMd3ufgiTk9AI/pub?gid=0" target="_blank"><img src="Pictures/sach10.jpg" alt="THỜI KHÓA BIỂU"/></a>
+            <div>
+                <a href="https://docs.google.com/spreadsheets/u/0/d/1xXgLalohx17w8bePIcz5lMM1H0ArCgjMd3ufgiTk9AI/pub?gid=0" target="_blank">Khối 10</a>
+            </div>
+            
+        </div>
+        
+        <div class="tkb">
+            <a href="https://docs.google.com/spreadsheets/u/0/d/1xXgLalohx17w8bePIcz5lMM1H0ArCgjMd3ufgiTk9AI/pub?gid=4" target="_blank"><img src="Pictures/sach11.jpeg" alt="THỜI KHÓA BIỂU"/></a>
+                    
+            <div>
+                <a href="https://docs.google.com/spreadsheets/u/0/d/1xXgLalohx17w8bePIcz5lMM1H0ArCgjMd3ufgiTk9AI/pub?gid=4" target="_blank">Khối 11</a>
+            </div>
+            
+        </div>
+        <div class="tkb">
+            <a href="https://docs.google.com/spreadsheets/u/0/d/1xXgLalohx17w8bePIcz5lMM1H0ArCgjMd3ufgiTk9AI/pub?gid=5" target="_blank"><img src="Pictures/sach12.jpg" alt="THỜI KHÓA BIỂU"/></a>
+            <div>
+                <a href="https://docs.google.com/spreadsheets/u/0/d/1xXgLalohx17w8bePIcz5lMM1H0ArCgjMd3ufgiTk9AI/pub?gid=5" target="_blank">Khối 12</a>
+            </div>   
+        </div>
+    </section>
+
+    <section>
+        <div class="slideshow bannerngang">
+            <div></div>
+
+        </div>
+        <div class="tieude1" id="tailieu"><h1><i class="fa fa-book"></i> Tài liệu học tập</h1></div>
+    </section>
+
+    <section class="main">
+        <div class="course">
+            <div><img src="Pictures/math.jpg" alt="dbm"></div>
+            <div style="background-color:darkseagreen;"><a href="https://tailieutuoi.com/chu-de/de-cuong-toan-lop-12">TOÁN</a></div>
+        </div>
+
+        <div class="course">
+            <div><img src="Pictures/van.jpg" alt="dbm"></div>
+            <div style="background-color:steelblue;"><a href="https://tuyensinhso.vn/ban-tin/de-cuong-on-tap-mon-ngu-van-cho-thi-sinh-thi-thpt-quoc-gia-2020-c49447.html">NGỮ VĂN</a></div>
+        </div>
+
+        <div class="course">
+            <div><img src="Pictures/anh.jpg" alt="dbm"></div>
+            <div style="background-color:peru;"><a href="https://vndoc.com/s/%C4%91%E1%BB%81+c%C6%B0%C6%A1ng+Ti%E1%BA%BFng+Anh+l%E1%BB%9Bp+12">TIẾNG ANH</a></div>
+        </div>
+
+        <div class="course">
+            <div><img src="Pictures/hoa.jpg" alt="dbm"></div>
+            <div style="background-color:tan;"><a href="https://thptlongtruong.hcm.edu.vn/to-hoa-hoc/hoa-hoc-12-de-cuong-on-tap-hoc-ki-1/ctmb/43182/447807">HÓA HỌC</a></div>
+        </div>
+
+        <div class="course">
+            <div><img src="Pictures/li.jpg" alt="dbm"></div>
+            <div style="background-color:darksalmon;"><a href="https://tuyensinhso.vn/ban-tin/de-cuong-vat-ly-lop-12-kem-bai-tap-van-dung-on-thi-thpt-quoc-gia-2020-c50387.html">VẬT LÍ</a></div>
+        </div>
+
+        <div class="course">
+            <div><img src="Pictures/sinh.jpg" alt="dbm"></div>
+            <div style="background-color:cornflowerblue;"><a href="https://loigiaihay.com/de-cuong-hoc-ki-1-mon-sinh-lop-12-phan-ly-thuyet-a84574.html">SINH HỌC</a></div>
+        </div>
+
+        <div class="course">
+            <div><img src="Pictures/su.jpg" alt="dbm"></div>
+            <div style="background-color:cadetblue;"><a href="https://tuyensinhso.vn/ban-tin-truoc-ky-thi/tron-bo-de-cuong-on-tap-lich-su-lop-12-cho-thi-sinh-thi-thpt-quoc-gia-c26227.html">LỊCH SỬ</a></div>
+        </div>
+
+        <div class="course">
+            <div><img src="Pictures/dia.png" alt="dbm"></div>
+            <div style="background-color:darkkhaki;"><a href="https://tuyensinhso.vn/ban-tin-truoc-ky-thi/he-thong-hoa-kien-thuc-mon-dia-ly-lop-12-giup-thi-sinh-de-hoc-c25253.html">ĐỊA LÍ</a></div>
+        </div>
+    </section>
+
+    <section>
+        <div class="tieude1" id="hocduong"><h1><i class="fa fa-image"></i> ALBUM / VIDEO HỌC ĐƯỜNG </h1></div>
+        <div class="hocsinh">
+            <div></div>
+
+            <div>
+                <div class="noidung_an">
+                    <img src="Pictures/vannghe.jpg"/>
                     <div class="an">
-                        <span>
-                            Theo quy chế thi tốt nghiệp THPT năm 2022, với môn thi tự luận Ngữ văn, bài thi được chấm theo thang điểm 10, điểm lẻ của tổng điểm toàn bài được làm tròn đến 2 chữ số thập phân. Đối với các môn thi còn lại (môn thi trắc nghiệm) làm tròn đến 2 chữ số thập phân cho từng bài thi và từng môn thi thành phần của bài thi tổ hợp.
-                            Điểm xét tốt nghiệp THPT năm 2022 gồm điểm các bài thi thí sinh dự thi để xét công nhận tốt nghiệp và điểm trung bình cả năm lớp 12 cùng điểm ưu tiên, khuyến khích (nếu có). Điểm của từng bài thi được quy về thang điểm 10 để tính điểm xét tốt nghiệp. Thí sinh được miễn thi bài thi Ngoại ngữ tương đương đạt 10 điểm cho bài thi này để xét công nhận tốt nghiệp THPT. 
-                        </span>
-                    </div>     
-                </a>
-                <div class="xem">
-                    Xem lại những cảm xúc sau kì thi THPT Quốc gia năm nay <a href="https://giaoducthoidai.vn/nhung-cam-xuc-sau-khi-ket-thuc-ky-thi-tot-nghiep-thpt-nam-2022-post600130.html"> tại đây</a>
+                        <div class="text">Văn nghệ chào mừng 20-11</div>
+                    </div>
                 </div>
-                
-                <div class="new">NEW!!!</div>
-            </div>
 
-            <div class="lastestnews">
-              <h1 class="lastest_h1"><i class="fa fa-bullhorn"></i> TIN MỚI <sup class="news">NEW!!</sup></h1>
-            </h1>
-                <ul class="lastest">
-                    <li>
-                        <a href="https://thuvienphapluat.vn/phap-luat/diem-chuan-dai-hoc-nam-2022-se-tang-hay-giam-sau-khi-biet-diem-thi-thpt-2022-can-phai-lam-nhung-gi-27824.html">
-                            <img src="Pictures/bieudo.png"/> 
-                            <p>Điểm chuẩn đại học năm 2022 sẽ tăng hay giảm?</p>
-                        </a>
-                    </li>
+                <div class="noidung_an">
+                    <img src="Pictures/hocduong3.jpg"/>
+                    <div class="an">
+                        <div class="text">Lễ tổng kết năm học</div>
+                    </div>
+                </div>
 
-                    <li>
-                        <a href="https://thi.tuyensinh247.com/de-thi-thu-tot-nghiep-thpt-e16.html">
-                            <img src="Pictures/dapanchinhthuc.jpg"/>
-                            <p>Đáp án các mã đề thi tốt nghiệp THPT Quốc gia năm 2022</p>        
-                        </a>            
-                    </li>
+                <div class="noidung_an">
+                    <img src="Pictures/hocduong2.jpg"/>
+                    <div class="an">
+                        <div class="text">Hội thao</div>
+                    </div>
+                </div>
 
-                    <li>
-                        <a href="https://tuoitre.vn/de-thi-tot-nghiep-thpt-nam-nay-de-hay-kho-20200627084112975.htm">
-                            <img src="Pictures/thingaydau.jpeg"/>
-                            <p>Đề tốt nghiệp năm nay dễ hay khó?</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>  
-        </div>
-    </div>
-
-<div class="tieude1" id="tuyensinhlop10"><h2>Tuyển sinh vào lớp 10 năm 2022</h2></div>
-    <div class="Thongtin">
-            <div class="thongtin"> 
-                <img src="Pictures/tuyensinh10.jpg"/>
-                <div>
-                    <a href="https://laodong.vn/giao-duc/diem-chuan-lop-10-nam-2022-tinh-ba-ria-vung-tau-1059091.ldo">  
-                        <p>Điểm chuẩn vào lớp 10 tỉnh BR-VT</p>
-                    </a>
+                <div class="noidung_an">
+                    <img src="Pictures/kếtnapdv.jpg"/>
+                    <div class="an">
+                        <div class="text">Lễ kết nạp đoàn viên mới</div>
+                    </div>
                 </div>
             </div>
 
-            <div class="thongtin">
-                <img src="Pictures/tracuu.webp"/>
-                <div>
-                    <a href="http://bariavungtau.edu.vn/SoGDDT/4/1947/7993/Tra-cuu-tuyen-sinh-lop-10/">
-                        <p>Tra cứu điểm thi vào lớp 10 tỉnh BR-VT năm 2022</p>
-                    </a>
-                </div>
-            </div>
-
-        <div class="thongtin">
-                <img src="Pictures/lichthi.jpg"/>
-                <div>
-                    <a href="https://baobariavungtau.com.vn/xa-hoi/202204/tu-ngay-7-96-thi-tuyen-sinh-lop-10-nam-hoc-2022-2023-949040/index.htm">
-                        <p>Lịch thi vào lớp 10 tỉnh BR-VT năm 2022</p>
-                    </a>
-                </div>
+            <div class="videos">
+                <div><iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F100057230988468%2Fvideos%2F204074018093683%2F&show_text=false&width=560&t=0" width="600" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe></div>
+                <div><iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F100057230988468%2Fvideos%2F223314422770716%2F&show_text=false&width=560&t=0" width="600" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe></div>
             </div>
         </div>
 
-        <div class="tieude1" id="diemchuandaihoc"><h2>Điểm chuẩn các trường đại học năm 2021</h2></div>
-        <div class="Thongtin">
-    
-                <div class="thongtin">
-                    <img src="Pictures/ueh.png"/>
-                    <div>
-                        <a href="https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-kinh-te-tphcm-KSA.html">
-                            <p>Điểm chuẩn trường đại học Kinh Tế TP.HCM năm 2021</p>
-                        </a>
-                    </div>
-                </div>
-         
-                <div class="thongtin">
-                    <img src="Pictures/ou.jpg"/>
-                    <div>
-                        <a href="https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-mo-tphcm-MBS.html">
-                            <p>Điểm chuẩn trường đại học Mở TP.HCM năm 2021</p>
-                        </a>
-                    </div>
-                </div>
-    
-                <div class="thongtin">
-                    <img src="Pictures/uit.jpg"/>
-                    <div>
-                        <a href="https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-tphcm-QSC.html">
-                            <p>Điểm chuẩn trường đại học Công Nghệ Thông Tin TP.HCM năm 2021</p>
-                        </a>
-                    </div>
-                </div>
 
-                <div class="thongtin">
-                    <img src="Pictures/ussh.jpg"/>
-                    <div>
-                        <a href="https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dai-hoc-quoc-gia-ha-noi-QHX.html">
-                            <p>Điểm chuẩn trường đại học Khoa Học Xã Hội và Nhân Văn TP.HCM năm 2021</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="thongtin">
-                    <img src="Pictures/ufm.jpg"/>
-                    <div>
-                        <a href="https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-tai-chinh-marketing-DMS.html">
-                            <p>Điểm chuẩn trường đại học Tài Chính-Marketing TP.HCM năm 2021</p>
-                        </a>
-                    </div>
-                </div>
-    
-                <div class="thongtin">
-                    <img src="Pictures/ute.jpe"/>
-                    <div>
-                        <a href="https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-su-pham-ky-thuat-tphcm-SPK.html">                
-                            <p>Điểm chuẩn trường đại học Sư Phạm Kỹ Thuật TP.HCM năm 2021</p>
-                        </a>
-                    </div>
-                </div>
-            </div>  
-    
-    <div class="tieude1" id="cuocthi-khac"><h2>Cuộc thi và khác</h2></div>
-        <div class="Thongtin">
-        
-                <div class="thongtin">
-                    <img src="Pictures/khkt6.jpeg"/>
-                    <div>
-                        <a href="http://www.brt.vn/thoi-su/ngay-moi/202101/khai-mac-cuoc-thi-khoa-hoc-ki-thuat-tinh-br-vt-danh-cho-hoc-sinh-trung-hoc-nam-2020-2021-8204290/"
-                            <p>BRVT khai mạc cuộc thi KHKT cho học sinh</p>
-                        </a>
-                    </div>
-                    </div>
-             
-                <div class="thongtin">
-                     <img src="Pictures/hsg.jpg"/>
-                    <div>
-                        <a href="https://baobariavungtau.com.vn/xa-hoi/202203/ba-ria-vung-tau-dat-39-giai-hoc-sinh-gioi-quoc-gia-947128/index.htm">
-                            <p>BRVT đạt 39 giải học sinh giỏi Quốc gia</p>
-                        </a>
-                    </div>
-                </div>
-        
-                <div class="thongtin">
-                    <img src="Pictures/computer1.jpg"/>
-                    <div>
-                        <a href="https://www.baobariavungtau.com.vn/xa-hoi/202202/cuoc-thi-hoc-sinh-voi-an-toan-thong-tin-2022-944886/index.htm">
-                            <p>Cuộc thi Học sinh và An toàn thông tin</p>
-                        </a>
-                    </div>
-                </div>
-        
-                <div class="thongtin">
-                    <img src="Pictures/giaithethao.jpg"/>
-                    <div>
-                        <a href="http://sovhtt.baria-vungtau.gov.vn/the-duc-the-thao/-/asset_publisher/content/giai-vo-co-truyen-tinh-ba-ria-vung-tau-nam-2021">                
-                            <p>Giải thể thao bộ môn Võ cổ truyền</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="thongtin">
-                    <img src="Pictures/traihe.jpeg"/>
-                    <div>
-                        <a href="https://baobariavungtau.com.vn/xa-hoi/201907/khai-mac-trai-he-huyen-dat-do-861425/">
-                            <p>Khai mạc trại hè cho học sinh huyện Đất Đỏ</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="thongtin">
-                    <img src="Pictures/mienTrung.jpg"/>
-                    <div>
-                        <a href="https://giaoduc.net.vn/thay-tro-ba-ria-vung-tau-huong-ve-dong-bao-mien-trung-post213112.gd">
-                            <p>Thầy trò huyện Đất Đỏ hướng về miền Trung</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="thongtin">
-                    <img src="Pictures/uongnuocnhonguon.jpg"/>
-                    <div>
-                        <a href="http://congdoanbrvt.org.vn/hoat-dong-uong-nuoc-nho-nguon-nho-on-anh-hung-liet-sy/">
-                            <p>BRVT thực hiện chương trình "uống nước nhớ nguồn"</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="thongtin">
-                    <img src="Pictures/dgnl.jpg"/>
-                    <div>
-                        <a href="https://hoatieu.vn/hoc-tap/diem-chuan-danh-gia-nang-luc-207592">
-                            <p>Điểm chuẩn ĐGNL các trường đại học TP.HCM</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="thongtin">
-                    <img src="Pictures/tuutruong.jpg"/>
-                    <div>
-                        <a href="https://laodong.vn/chinh-sach-giao-duc/ba-ria-vung-tau-hoc-sinh-cac-cap-se-den-truong-ke-tu-228-1074069.ldo">
-                            <p>Lịch tựu trường của của các trường tỉnh BRVT</p>
-                        </a>
-                    </div>
-                </div>    
 </section>
 
 <footer>
@@ -367,6 +300,6 @@
     </div>
     
 </footer>
+
 </body>
 </html>
-
